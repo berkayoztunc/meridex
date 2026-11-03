@@ -1,0 +1,30 @@
+# secrets and local config
+.dev.vars
+.env
+.env.*
+!.env.example
+!.dev.vars.example
+scripts/.testkey
+*.pem
+*.key
+
+# dependencies and build output
+node_modules
+.wrangler
+dist
+coverage
+
+# local databases and tooling state
+*.db
+.swarm
+.claude
+.claude-flow
+agentdb.rvf*
+.DS_Store
+
+# not part of the public repo
+grand.md
+docs/grant-weakness-analysis.md
+meridexlogo.png
+stelfun_coin.json
+stelfun_launchpad.json

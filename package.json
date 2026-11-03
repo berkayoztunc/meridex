@@ -1,0 +1,39 @@
+{
+  "name": "meridex",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate:local": "wrangler d1 migrations apply stellar-wallet-bot --local",
+    "db:migrate:remote": "wrangler d1 migrations apply stellar-wallet-bot --remote",
+    "webhook:set": "node scripts/webhook.mjs set",
+    "webhook:info": "node scripts/webhook.mjs info",
+    "webhook:commands": "node scripts/webhook.mjs commands",
+    "gen:key": "node -e \"console.log(require('crypto').randomBytes(32).toString('base64'))\""
+  },
+  "dependencies": {
+    "@stellar/stellar-base": "^15.0.0",
+    "qrcode-generator": "^2.0.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7",
+    "wrangler": "^4.152.0"
+  },
+  "license": "MIT",
+  "description": "Telegram wallet and trading bot for Stellar, running on Cloudflare Workers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berkayoztunc/meridex.git"
+  },
+  "homepage": "https://meridex.trade",
+  "engines": {
+    "node": ">=20"
+  }
+}

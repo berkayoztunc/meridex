@@ -1,0 +1,6 @@
+# Copy to .dev.vars for `wrangler dev`. Never commit real values.
+BOT_TOKEN=123456:replace-with-botfather-token
+WEBHOOK_SECRET=replace-with-long-random-string
+WEBHOOK_PATH=replace-with-random-path
+# generate with: npm run gen:key
+MASTER_KEY=

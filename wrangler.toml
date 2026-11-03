@@ -1,0 +1,29 @@
+name = "stellar-wallet-bot"  # kept: renaming a Worker drops its secrets
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+compatibility_flags = ["nodejs_compat"]
+routes = [
+  { pattern = "meridex.trade", custom_domain = true },
+  { pattern = "www.meridex.trade", custom_domain = true },
+]
+
+[vars]
+NETWORK = "testnet"            # "testnet" | "public"
+HORIZON_URL = ""               # optional override
+LAUNCHPAD_ID = "CBYA2GA737D66LWIUXMA2UXSTYZR2XMN54DI52MXASEFZGCDRJJLTKXQ"  # Stelfun launchpad (testnet only)
+# Secrets (wrangler secret put): BOT_TOKEN, WEBHOOK_SECRET, MASTER_KEY, WEBHOOK_PATH
+
+[[d1_databases]]
+binding = "DB"
+database_name = "stellar-wallet-bot"
+database_id = "5a77ce69-2cdc-44f7-9ba0-7de9f529751c"
+migrations_dir = "migrations"
+
+[triggers]
+crons = ["* * * * *"]
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+run_worker_first = ["/webhook/*"]
+

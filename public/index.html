@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridex — Stellar wallet &amp; trading in Telegram</title>
+<meta name="description" content="Meridex is a Telegram bot for Stellar: create a wallet, send and receive XLM and tokens, swap on Aquarius, and trade Stelfun launchpad coins without leaving chat.">
+<meta name="theme-color" content="#0e0e11">
+<meta property="og:title" content="Meridex — Stellar wallet &amp; trading in Telegram">
+<meta property="og:description" content="Wallet, swaps and launchpad trading for Stellar, inside Telegram.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meridex.trade/">
+<meta property="og:image" content="https://meridex.trade/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="glow g1" aria-hidden="true"></div>
+<div class="glow g2" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Meridex home">
+    <img src="/icon-192.png" width="36" height="36" alt="">
+    <span>Meridex</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="#features">Features</a>
+    <a href="#providers">Providers</a>
+    <a href="#demo">Demo</a>
+    <a href="#how">How it works</a>
+    <a href="#commands">Commands</a>
+    <a href="#security">Security</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm" href="https://t.me/MeridexTradeBot">Open bot</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="pill"><span class="dot"></span> Live on Stellar testnet</p>
+      <h1>Navigate Stellar<br>from <span class="gold">your chat.</span></h1>
+      <p class="lead">Meridex is the wallet and trading desk that lives in Telegram. Create a wallet in one tap, send and receive, swap on Aquarius, and trade Stelfun launchpad coins — no extensions, no installs.</p>
+      <div class="cta">
+        <a class="btn" href="https://t.me/MeridexTradeBot">Start the bot <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#demo">Watch it work</a>
+      </div>
+      <ul class="stats" aria-label="Highlights">
+        <li><b>&lt; 5s</b><span>to your first wallet</span></li>
+        <li><b>15</b><span>chat commands</span></li>
+        <li><b>0</b><span>apps to install</span></li>
+      </ul>
+    </div>
+
+    <div class="emblem" aria-hidden="true">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="halo"></div>
+      <img src="/logo.png" width="640" height="640" alt="Meridex emblem: a compass star above a wallet shield with candlesticks" fetchpriority="high">
+      <span class="chip c1"><i class="up">▲</i> +12.4% STLF</span>
+      <span class="chip c2"><i class="ok">✓</i> Swap via Aquarius</span>
+      <span class="chip c3">⚡ 1 tap wallet</span>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="track">
+      <span>WALLET</span><span>SEND</span><span>RECEIVE</span><span>SWAP ON AQUARIUS</span><span>STELFUN LAUNCHPAD</span><span>LIVE PRICES</span><span>REFERRALS</span><span>QR ADDRESS</span>
+      <span>WALLET</span><span>SEND</span><span>RECEIVE</span><span>SWAP ON AQUARIUS</span><span>STELFUN LAUNCHPAD</span><span>LIVE PRICES</span><span>REFERRALS</span><span>QR ADDRESS</span>
+    </div>
+  </div>
+
+  <section id="features" class="section">
+    <header class="sec-head">
+      <p class="eyebrow">Features</p>
+      <h2>A full Stellar toolkit, <span class="gold">pocket-sized.</span></h2>
+    </header>
+    <div class="bento">
+      <article class="card big">
+        <div class="ico">⌁</div>
+        <h3>Swap on Aquarius</h3>
+        <p>Buy and sell tokens with XLM through the Aquarius router. Set your own slippage tolerance and see the route before you confirm.</p>
+        <div class="bars" aria-hidden="true"><i style="--h:30%"></i><i style="--h:52%"></i><i style="--h:40%"></i><i style="--h:68%"></i><i style="--h:58%"></i><i style="--h:82%"></i><i style="--h:74%"></i><i style="--h:96%"></i></div>
+      </article>
+      <article class="card big">
+        <div class="ico">✦</div>
+        <h3>Stelfun launchpad</h3>
+        <p>Spot a new coin on the Stelfun launchpad and trade it straight from the bot — price, market cap and pool depth on demand.</p>
+        <div class="bars alt" aria-hidden="true"><i style="--h:22%"></i><i style="--h:36%"></i><i style="--h:30%"></i><i style="--h:55%"></i><i style="--h:48%"></i><i style="--h:70%"></i><i style="--h:88%"></i><i style="--h:100%"></i></div>
+      </article>
+      <article class="card"><div class="ico">◈</div><h3>Instant wallets</h3><p>Create, list and switch between multiple wallets per Telegram account.</p></article>
+      <article class="card"><div class="ico">⇄</div><h3>Send &amp; receive</h3><p>Send XLM or any trusted token. Share your address as a QR code.</p></article>
+      <article class="card"><div class="ico">◔</div><h3>Live prices</h3><p>Token price, market cap and depth with a single command.</p></article>
+      <article class="card"><div class="ico">❖</div><h3>Referrals</h3><p>A personal invite link and a live count of friends who joined.</p></article>
+    </div>
+  </section>
+
+  <section id="providers" class="section">
+    <header class="sec-head">
+      <p class="eyebrow">Liquidity &amp; providers</p>
+      <h2>Trade where the liquidity <span class="gold">already lives.</span></h2>
+    </header>
+    <div class="providers">
+      <article class="prov"><span class="tag">AMM · Swaps</span><h3>Aquarius</h3><p>Stellar's Soroban AMM. Meridex asks Aquarius for the best route across its pools and sends the swap through the Aquarius router contract.</p><div class="meta"><b>Used for</b> /buy · /sell · /price</div></article>
+      <article class="prov"><span class="tag gold-t">Launchpad · Bonding curve</span><h3>Stelfun</h3><p>Buy and sell coins on Stelfun's launchpad curves, with curve progress, spot price and fees shown before you confirm.</p><div class="meta"><b>Used for</b> launchpad buy · sell · quotes</div></article>
+      <article class="prov"><span class="tag">Network</span><h3>Stellar &middot; Soroban</h3><p>Wallets, balances and trustlines run on Horizon, and swaps are simulated and submitted through Soroban RPC.</p><div class="meta"><b>Network</b> testnet now · mainnet ready</div></article>
+    </div>
+    <p class="prov-note">Pool and provider names belong to their respective owners; Meridex is an independent client. More venues are planned.</p>
+  </section>
+
+  <section id="demo" class="section demo">
+    <div class="demo-copy">
+      <p class="eyebrow">See it in action</p>
+      <h2>From zero to first trade in <span class="gold">six messages.</span></h2>
+      <p>Every action is a command or a button. No seed phrases to copy at the start, no browser extensions, no switching apps — just chat.</p>
+      <a class="btn btn-ghost" href="https://t.me/MeridexTradeBot">Try it yourself <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="phone" aria-label="Example Meridex chat">
+      <div class="phone-top"><img src="/icon-192.png" width="38" height="38" alt=""><div><b>Meridex</b><small>bot</small></div></div>
+      <div class="chat" id="chat" data-script='[
+        {"me":"/start"},
+        {"bot":"🧭 <b>Welcome to Meridex</b><br>Wallet ready on Testnet<br>Funded with free test XLM.<div class=\"kv\"><span>Address</span> GDX3…K7QP</div>"},
+        {"me":"/balance"},
+        {"bot":"<b>💰 Wallet 1 · Testnet</b><br><b>1,250 XLM</b><br>1,200 available, 50 reserved<div class=\"kv\"><span>STLF</span> 48,000</div>"},
+        {"me":"/buy"},
+        {"bot":"💱 <b>Swap preview</b><br><b>Pay 100 XLM · get ~3,812 STLF</b><br>Minimum 3,774 STLF at 1% slippage<div class=\"kv\"><span>Route</span> XLM to STLF</div><div class=\"btns\"><i>Confirm</i><i>Cancel</i></div>"}
+      ]'></div>
+      <div class="phone-input"><span>Message</span></div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <header class="sec-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three bearings. <span class="gold">Zero friction.</span></h2>
+    </header>
+    <ol class="steps">
+      <li><span class="n">01</span><h3>Open the bot</h3><p>Tap <b>Start</b> in Telegram. Your wallet is generated instantly.</p></li>
+      <li><span class="n">02</span><h3>Add a token</h3><p>Use <code>/trust</code> to add a trustline, then fund your address.</p></li>
+      <li><span class="n">03</span><h3>Trade &amp; send</h3><p>Buy, sell and transfer with <code>/buy</code>, <code>/sell</code> and <code>/send</code>.</p></li>
+    </ol>
+  </section>
+
+  <section id="commands" class="section">
+    <header class="sec-head">
+      <p class="eyebrow">Commands</p>
+      <h2>Everything is one <span class="gold">slash</span> away.</h2>
+    </header>
+    <div class="term" role="group" aria-label="Command list">
+      <div class="term-bar"><i></i><i></i><i></i><span>meridex — commands</span></div>
+      <div class="cmds">
+        <div><code>/start</code><span>Create wallet / welcome</span></div>
+        <div><code>/menu</code><span>All actions in one place</span></div>
+        <div><code>/balance</code><span>XLM and token balances</span></div>
+        <div><code>/receive</code><span>Your address + QR</span></div>
+        <div><code>/send</code><span>Send XLM or a token</span></div>
+        <div><code>/buy</code><span>Buy a token with XLM</span></div>
+        <div><code>/sell</code><span>Sell a token for XLM</span></div>
+        <div><code>/price</code><span>Price, market cap, pool depth</span></div>
+        <div><code>/slippage</code><span>Swap slippage tolerance</span></div>
+        <div><code>/trust</code><span>Add a token (trustline)</span></div>
+        <div><code>/wallets</code><span>List / switch / create wallets</span></div>
+        <div><code>/referral</code><span>Invite link and count</span></div>
+        <div><code>/export</code><span>Export private key</span></div>
+        <div><code>/help</code><span>Help</span></div>
+        <div><code>/cancel</code><span>Cancel current action</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="security" class="section">
+    <div class="secure">
+      <div>
+        <p class="eyebrow">Security &amp; transparency</p>
+        <h2>Know exactly how your keys are handled.</h2>
+        <p>Meridex is a hosted wallet. Private keys are encrypted at rest in a Cloudflare D1 database with a server-side master key, and only decrypted to sign your transactions. You can export your key at any time with <code>/export</code>.</p>
+        <p>Meridex currently runs on the <b>Stellar testnet</b>. Do not treat testnet balances as real funds, and only keep on a hosted wallet what you are comfortable risking.</p>
+      </div>
+      <ul class="checks">
+        <li>Keys encrypted at rest</li>
+        <li>Private chats only — groups are ignored</li>
+        <li>Webhook protected by secret token</li>
+        <li>Runs on Cloudflare Workers</li>
+        <li>Export your key anytime</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="faq-wrap">
+      <header class="sec-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Quick <span class="gold">answers.</span></h2>
+        <p class="sub">Can't find yours? Ask the bot with <code>/help</code>.</p>
+      </header>
+      <div class="faq">
+        <details><summary>Is Meridex non-custodial?</summary><p>No. Keys are generated and stored encrypted by the bot so it can sign for you. You can export your private key and move to any other wallet whenever you like.</p></details>
+        <details><summary>Which network does it use?</summary><p>Stellar testnet today. Mainnet support is built in and will be enabled when ready.</p></details>
+        <details><summary>Which pools and providers are supported?</summary><p>Aquarius AMM pools for swaps and the Stelfun launchpad for bonding-curve coins.</p></details>
+        <details><summary>What can I trade?</summary><p>XLM and tokens that have an Aquarius pool, plus coins from the Stelfun launchpad.</p></details>
+        <details><summary>Does it cost anything?</summary><p>Using the bot is free. Normal Stellar network fees apply to transactions.</p></details>
+        <details><summary>Can I have several wallets?</summary><p>Yes. Create, list and switch wallets with <code>/wallets</code>.</p></details>
+        <details><summary>What is slippage?</summary><p>The price movement you accept before a swap fails. Change it any time with <code>/slippage</code>.</p></details>
+        <details><summary>How do I leave with my funds?</summary><p>Run <code>/export</code> to get your private key and import it into any Stellar wallet.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <img src="/logo.png" width="160" height="160" alt="" loading="lazy">
+    <h2>Ready to find your <span class="gold">true north?</span></h2>
+    <p>Open Telegram and say hello to Meridex.</p>
+    <a class="btn" href="https://t.me/MeridexTradeBot">Launch @MeridexTradeBot <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="yr">2026</span> Meridex · meridex.trade</span>
+  <span>Not financial advice. Testnet only for now.</span>
+</footer>
+<script src="/app.js" defer></script>
+</body>
+</html>

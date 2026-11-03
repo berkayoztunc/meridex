@@ -24,7 +24,7 @@
     "@types/node": "^26.6.5",
     "typescript": "^5.9.3",
     "vitest": "^3.2.7",
-    "wrangler": "^4.152.0"
+    "wrangler": "^4.156.0"
   },
   "license": "MIT",
   "description": "Telegram wallet and trading bot for Stellar, running on Cloudflare Workers",

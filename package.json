@@ -20,11 +20,11 @@
     "qrcode-generator": "^2.0.4"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^5.20261022.1",
-    "@types/node": "^26.6.5",
-    "typescript": "^5.9.3",
-    "vitest": "^3.2.7",
-    "wrangler": "^4.152.0"
+    "@cloudflare/workers-types": "^5.20261031.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5",
+    "wrangler": "^4.156.0"
   },
   "license": "MIT",
   "description": "Telegram wallet and trading bot for Stellar, running on Cloudflare Workers",

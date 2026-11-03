@@ -221,7 +221,7 @@ test/                  Vitest unit tests
 
 | Developer | Role | Links |
 |---|---|---|
-| Berkay Öztunç | Co-founder, developer | [GitHub @berkayoztunc](https://github.com/berkayoztunc) |
+| Berkay Öztunç | Co-founder, developer | [GitHub @berkayoztunc](https://github.com/berkayoztunc) · [LinkedIn](https://www.linkedin.com/in/berkayoztunc/) |
 | Emre Arslan | Co-founder, developer | [GitHub @yemrearslan](https://github.com/yemrearslan) · [LinkedIn](https://www.linkedin.com/in/emre-arslan-42b7a977/) |
 
 ### Previous open-source work

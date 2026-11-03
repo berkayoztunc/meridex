@@ -60,6 +60,8 @@ Create a wallet in one tap, send and receive, swap on Aquarius and trade Stelfun
 
 ## Architecture
 
+Diagrams and trust boundaries: [docs/architecture.md](docs/architecture.md).
+
 ```
 Telegram ──webhook──▶ Cloudflare Worker ──▶ D1 (encrypted keys, users, referrals, audit, trades)
                            │
